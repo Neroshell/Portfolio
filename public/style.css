@@ -27,7 +27,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
     width: 150px;
     height: 150px;
-    margin: 0 auto;
+    margin: 10px auto;
     border-radius: 20px;
 } 
 
@@ -37,7 +37,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .stuck-nav-div{
     width: 30%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,25 +45,26 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 .stuck-nav{
-    height: 90vh;
+    height: 90%;
     border: 1px solid silver;
     width: 20%;
     border-radius: 20px;
     padding-top: 30px;
     text-align: center;
     position: fixed;
-    left: 30px;
+    left: 40px;
     background-color: #000014;
    
 }
 
 .free-page{
-   
  
     width: 80%;
-    height: 100%;
+    height: 100%;  
+}
 
-   
+.mobile-icon-div{
+  display: none;
 }
 
 .all-right p{
@@ -104,7 +105,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border: 1px solid white;
     border-radius: 20px;
     box-shadow: 0 0 0 2em transparent;
-    padding: 10px 70px;
+   width: 80%;
+   padding: 10px 0 10px 0;
     margin: 0 auto;
     background-color:#279EFF;
     font-weight: 900;
@@ -198,6 +200,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   .links{
     width: 100%;
     text-align: center;
+  
    
   }
 .links ul{
@@ -206,13 +209,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
    gap: 35px;
    width: 40%;
    border: 1px solid #696969;
-   margin: 0 auto;
+   margin: -20px auto;
   padding: 15px 10px;
   border-radius: 25px;
   position: fixed;
   right: 200px;
-
-  
    
 }
 .links ul li{
@@ -382,7 +383,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-    gap: 280px
+    gap: 320px;
+    border: 1px solid yellow;
+    width: 100%;
 }
 .numberland{
   border: 5px solid #FCE22A;
@@ -418,14 +421,20 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   -webkit-background-clip: text; /* For Safari and older browsers */
   background-clip: text;
   position: relative;
+}
+
+.show-room-1 a{
+  
+  position: relative;
+ color: white;
  
 
 }
 
+
 .show-room p{
 
  text-align: left;
- margin-left: 20px;
   font-size: 15px;
 }
 
@@ -613,7 +622,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .sec-resume h1{
 
     margin-left: 50px;
-    color: #696969;
+    color: #FFFDD0;
+
   
 }
 
@@ -686,7 +696,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .text-box p:first-of-type {
 
-  color: white;
+  color: #FFFDD0;
   font-weight: bold;
 }
 
@@ -875,5 +885,364 @@ textarea{
     }
   }
   
+/*--- Mobile styles ---*/
+  @media (max-width: 480px) {
+    .stuck-nav-div{
+      display: none;
+    }
+
+   .free-page{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+   
+   }
+
+   .home-icon-div{
+    display: none;
+   }
+   .mobile-icon-div{
+    display: block;
+    margin: 20px auto;
+   padding-top: 15px;
+   padding-bottom: 15px;
+    width: 60px;
+    border-radius: 8px;
+    background-color: #696969;
+    color: white;
+    text-align: center;
+
+   }
+   .main-body{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    height: 100vh;
+   }
+
+   .intro{
+  
+    width: 100%;
+    margin-bottom: 100px;
+   }
+
+   .links{
+  
+    width: 100%;
+
+   }
+
+   .links ul{
+      width: 90%;
+     right: 18px;
+     bottom: 30px;
+  }
+
+  .links i{
+    font-size: 16px;
+  }
+
+.place{
+    display: none;
+}
+
+  /* work */
+  .work-body{
+    border: 1px solid red;
+    width: 100%;
+  }
+
+  .work-body main{
+    border: 1px solid blueviolet;
+  }
+
+  .show-room{
+    width: 90%;
+  }
+
+  .work-intro h1{
+      font-size:  45px;
+  }
+
+  .work-intro p{
+      margin-top: 20px ;
+  }
+  
+  .links-work{
+    width: 100%;
+  }
 
 
+
+.links-work ul{
+   width: 90%;
+  right: 18px;
+  bottom: 30px;
+}
+
+.links-work i{
+ font-size: 16px;
+}
+.place{
+  display: none;
+}
+
+.work-show{
+   
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+}
+
+
+
+
+.work-years div{
+  width: 40%;
+}
+
+.links-work{
+   
+    bottom: 10px;
+}
+
+.show-room-1 h2{
+ 
+  width: 50%;
+  border: 1px solid green;
+  margin: 0px;
+}
+
+.show-room-1 a{
+  border: 1px solid red;
+  width: 50%;
+}
+
+.show-room-frame{
+  height: 150px;
+  width: 100%;
+}
+
+.show-room-frame img{
+  width: 100%;
+  height: 100%;
+}
+
+.show-room-1{
+ 
+  gap: 200px;
+  border: 1px solid green;
+  
+}
+.show-room{
+  width: 95%;
+  
+}
+.work-show{
+  width: 100%;
+ 
+}
+
+    /********* Stack */
+
+    .stack{
+      width: 80%;
+      border-radius: 20px;
+    }
+
+    .links-stack{
+      width: 100%;
+    }
+
+     /********* About */
+
+      .about-name h1{
+        font-size: 36px;
+      }
+      .heading{
+        font-size: 20px ;
+      }
+
+      .sec-resume{
+        width: 100%;
+       
+      }
+
+      .sec-resume h1{
+        margin: 0px;
+        margin-top: 20px;
+      }
+
+      .container{
+        
+         margin: 0px;
+         width: 100%;
+        padding: 0px;
+        
+       }
+
+      .text-box{
+      
+       padding: 20px;
+        line-height: 1.5;
+        width: 90%;
+        margin: 15px auto;
+      }
+
+      .text-box h2{
+        font-size: 25px;
+      }
+
+     
+      .timeline::before, .container img, .text-box-circle::before{
+          display: none;
+      
+      }
+
+      /*Contact*/
+      .ref-links{
+        display: block;
+        
+        
+      }
+     .ref-links a{
+      width: 70%;
+      margin: 15px auto;
+      padding: 15px;
+      
+     }
+
+     .contact-first-div{
+      line-height: 1.3;
+      border: 1px solid green;
+      width: 100%;
+      text-align: center;
+     }
+     .contact-first-div h1{
+      width: 100%;
+      font-size: 40px;
+      
+     }
+     .whatsapp a{
+      padding: 10px;
+      width: 100%;
+     }
+
+     .contact-first-div .fa-circle-dot ,.span-one{
+          margin-top: 20px;
+     }
+
+     .input-box{
+      width: 100%;
+     }
+
+     .input-div{
+      flex-direction: column;
+     
+     }
+
+     textarea{
+      width: 90%;
+     }
+
+     .contact-second-div::after{
+      content: "";
+      position: absolute;
+      width: 30%;
+      height: 1px;
+      font-weight: 100;
+      background: #696969; /* You can change the color to your preference */
+      top: 40%;
+     right: 10px;
+  }
+  
+  .contact-second-div::before{
+    
+    width: 30%;
+    height: 1px;
+    font-weight: 100 ;
+    background: #696969; /* You can change the color to your preference */
+    top: 40%;
+    left: 10px;
+   
+  
+  }
+
+  form{
+    width: 100%;
+  }
+
+  .btn-message{
+    width: 70%;
+  }
+  }
+
+  /*--- Landscape styles ---*/
+  
+ /* Styles for small tablets and landscape mobiles */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .main-body {
+    flex-direction: row; /* Display the main content in a row layout for landscape */
+  }
+
+  .stuck-nav-div{
+    display: none;
+  }
+
+ .free-page{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+ 
+ }
+
+  .image-box-1{
+    margin-bottom: 20px;
+  }
+
+ 
+ .free-page{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+ 
+ }
+
+ .home-icon-div{
+  display: none;
+ }
+ .mobile-icon-div{
+  display: block;  
+ padding-top: 15px;
+ padding-bottom: 15px;
+  width: 60px;
+  border-radius: 8px;
+  background-color: #696969;
+  color: white;
+ }
+ 
+
+  .intro {
+    width: 60%; /* Adjust the width for landscape view */
+    margin-bottom: 30px;
+  }
+
+  .intro-main h1 {
+    font-size: 40px; 
+  }
+
+  .links ul {
+    width: 50%; 
+    right: 160px; 
+    bottom: 30px;
+  }
+
+  .place{
+    display: none;
+}
+
+  
+
+
+}

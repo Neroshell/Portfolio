@@ -1088,6 +1088,7 @@ textarea{
         line-height: 1.5;
         width: 90%;
         margin: 15px auto;
+        background-color: #00001d;
       }
 
       .text-box h2{
@@ -1115,7 +1116,6 @@ textarea{
 
      .contact-first-div{
       line-height: 1.3;
-      border: 1px solid green;
       width: 100%;
       text-align: center;
      }

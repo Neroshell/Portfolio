@@ -23,6 +23,25 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
    
 }
 
+.thank-you-body{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+.thank-you-body div{
+  width: 70%;
+
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+   border-radius: 10px;
+   line-height: 1.7;
+}
+
 .image-box-1{
 
     width: 150px;
@@ -55,6 +74,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     left: 40px;
     background-color: #000014;
    
+}
+
+.stuck-nav-div-mobile{
+  display: none;
 }
 
 .free-page{
@@ -216,10 +239,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   right: 200px;
    
 }
-.links ul li{
-    list-style-type: none;
-    
-}
+
 
 .links i{
     margin-right: 10px;
@@ -384,7 +404,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     justify-content: space-around;
     margin-top: 20px;
     gap: 320px;
-    border: 1px solid yellow;
+   
     width: 100%;
 }
 .numberland{
@@ -605,6 +625,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     color: #FFFDD0;
   }
 
+  
   .about-story-div{
     
       width: 80%;
@@ -710,6 +731,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
   color: #FFFDD0;
   font-weight: bold;
+  
 }
 
 .text-box p:last-child{
@@ -828,6 +850,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-color: #000014;
   padding-left: 15px;
   border: 1px solid #696969;
+  outline: none;
   color: #FFFDD0;
 }
 
@@ -839,6 +862,8 @@ textarea{
   padding-left: 20px;
   padding-top: 10px;
   color: #FFFDD0;
+  outline: none;
+ 
 }
 
 .btn-message{
@@ -849,17 +874,23 @@ textarea{
   color: white;
   border-radius: 10px;
   margin-top: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .whatsapp{
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  margin: 0 auto;
 }
 
 .whatsapp a{
 
-    width: 200px;
-    border: 1px solid green;
-    padding: 10px 20px;
+    width: 100%;
+    padding: 5px 5px;
     text-decoration: none;
     background-color: green;
     color: white;
@@ -868,15 +899,13 @@ textarea{
 
 }
 
+
 .whatsapp span{
-  margin-left: 20px;
+  margin-left: 10px;
+ 
 }
 
-.fa-whatsapp{
-  color: white;
-  font-size: 20px;
-  margin-top: 5px;
-}
+
 
   @-webkit-keyframes pulse {
     0% {
@@ -955,7 +984,7 @@ textarea{
 
   
 /*--- Mobile styles ---*/
-  @media (max-width: 480px) {
+  @media (max-width: 540px) {
     .stuck-nav-div{
       display: none;
     }
@@ -966,6 +995,51 @@ textarea{
     text-align: center;
    
    }
+
+   
+.stuck-nav-div-mobile{
+  display: none;
+  z-index: 5;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  margin-top: 5px;
+  transition: opacity 5s ease-in-out;;
+}
+
+
+
+
+
+.stuck-nav-mobile{
+  width: 90%;
+  border: 1px solid silver;
+  height: 100%;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: #000014;
+  box-shadow: 8px 8px 8px 0px silver;
+
+ 
+}
+
+.stuck-nav-flex{
+  display: flex;
+  justify-content: center;
+  gap: 120px;
+  margin-top: 30px;
+}
+
+.image-box-1-mobile{
+  width: 130px;
+    height: 130px;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.image-box-1-mobile img{
+  border-radius: 50%;
+}
 
    .home-icon-div{
     display: none;
@@ -997,6 +1071,10 @@ textarea{
     margin-bottom: 100px;
    }
 
+   .intro-main{
+    margin-top: 70px;
+   }
+
    .links{
   
     width: 100%;
@@ -1019,13 +1097,11 @@ textarea{
 
   /* work */
   .work-body{
-    border: 1px solid red;
+   
     width: 100%;
   }
 
-  .work-body main{
-    border: 1px solid blueviolet;
-  }
+ 
 
   .show-room{
     width: 90%;
@@ -1075,18 +1151,19 @@ textarea{
 .links-work{
    
     bottom: 10px;
+   
 }
 
 .show-room-1 h2{
+ font-size: 22px;
+ width: 100%;
+ text-align: left;
  
-  width: 50%;
-  border: 1px solid green;
-  margin: 0px;
+ 
 }
 
 .show-room-1 a{
-  border: 1px solid red;
-  width: 50%;
+  width: 20%;
 }
 
 .show-room-frame{
@@ -1100,17 +1177,20 @@ textarea{
 }
 
 .show-room-1{
- 
-  gap: 200px;
-  border: 1px solid green;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+  width: 100%;
   
 }
 .show-room{
   width: 95%;
+
   
 }
 .work-show{
   width: 100%;
+
  
 }
 
@@ -1178,6 +1258,7 @@ textarea{
       
       }
 
+   
       /*Contact*/
       .ref-links{
         display: block;
@@ -1201,13 +1282,21 @@ textarea{
       font-size: 40px;
       
      }
-     .whatsapp a{
-      padding: 10px;
-      width: 100%;
-     }
+     .whatsapp{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    .whatsapp a{
+      padding: 10px 10px;
+    }
 
      .contact-first-div .fa-circle-dot ,.span-one{
-          margin-top: 20px;
+        margin-top: 20px;
      }
 
      .input-box{
@@ -1215,9 +1304,14 @@ textarea{
      }
 
      .input-div{
-      flex-direction: column;
+      flex-direction:column;
+      width: 90%;
      
      }
+
+    
+
+
 
      textarea{
       width: 90%;
@@ -1255,10 +1349,67 @@ textarea{
   }
   }
 
+ 
+  
+
   /*--- Landscape styles ---*/
   
  /* Styles for small tablets and landscape mobiles */
 @media (min-width: 481px) and (max-width: 1024px) {
+
+     
+.stuck-nav-div-mobile{
+  display: none;
+  z-index: 5;
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  margin-top: 5px;
+  transition: opacity 5s ease-in-out;;
+ 
+}
+
+
+
+
+
+.stuck-nav-mobile{
+  width: 70%;
+  border: 1px solid silver;
+  height: 80%;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: #000014;
+  box-shadow: 8px 8px 8px 0px silver;
+ 
+}
+
+.all-right p{
+  font-size: 20px;
+}
+
+.stuck-nav-flex{
+  display: flex;
+  justify-content: center;
+  gap: 250px;
+  margin-top: 60px;
+}
+
+.btn-77{
+  width: 30%;
+}
+
+.image-box-1-mobile{
+  width: 130px;
+    height: 130px;
+    margin: 10px auto;
+    border-radius: 20px;
+}
+
+.image-box-1-mobile img{
+  border-radius: 50%;
+}
+
   .main-body {
     flex-direction: row; /* Display the main content in a row layout for landscape */
   }
@@ -1278,13 +1429,6 @@ textarea{
     margin-bottom: 20px;
   }
 
- 
- .free-page{
-  width: 100%;
-  height: 100%;
-  text-align: center;
- 
- }
 
  .home-icon-div{
   display: none;
@@ -1313,11 +1457,12 @@ textarea{
     font-size: 90px; 
   }
 
-  .links ul i{
-    font-size: 20px
+  .links ul i, .links-work ul i{
+    font-size: 25px
    
   }
 
+  
   .links ul {
     width: 70%; 
     right: 140px; 
@@ -1408,12 +1553,12 @@ textarea{
 .show-room-1 h2{
  
   width: 50%;
-  border: 1px solid green;
+text-align: left;
   margin: 0px;
 }
 
 .show-room-1 a{
-  border: 1px solid red;
+
   width: 50%;
 }
 
@@ -1429,7 +1574,7 @@ textarea{
 
 .show-room-1{
  
-  gap: 200px;
+  gap: 280px;
   border: 1px solid green;
   
 }
@@ -1443,6 +1588,10 @@ textarea{
 }
 
 /**stack*/
+
+.mobile-icon-div{
+  text-align: center;
+}
 .stack {
 
   width: 30%;

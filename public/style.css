@@ -575,7 +575,7 @@
   .about-story-div {
   width: 80%;
   margin: 140px auto;
-  text-align: center; /* Or "justify" if you prefer */
+  text-align: center; 
   }
   
   .heading {
@@ -1013,13 +1013,13 @@
   }
   
   .links-work {
-  width: 100%;
+  width: 90%;
+  bottom: 10px;
+  left: 18px;  
   }
   
   .links-work ul {
-  width: 90%;
-  right: 18px;
-  bottom: 30px;
+  width: 100%;
   }
   
   .links-work i {
@@ -1039,9 +1039,6 @@
   width: 40%;
   }
   
-  .links-work {
-  bottom: 10px;
-  }
   
   .show-room-1 h2 {
   font-size: 22px;
@@ -1088,7 +1085,15 @@
   }
   
   .links-stack {
-  width: 100%;
+  width: 90%;
+  bottom: 10px;
+  left: 18px;  
+  }
+
+   
+
+  .links-stack ul{
+    width: 100%;
   }
   
   /********* About */

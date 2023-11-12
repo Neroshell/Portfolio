@@ -26,7 +26,7 @@ AOS.init({
 
             lastName.style.borderColor = "red"
             smallLast.style.display = "block";
-            smallLast.innerHTML = "Please enter your last name";
+            smallLast.innerHTML = "Please enter your email";
             event.preventDefault();
         }
         

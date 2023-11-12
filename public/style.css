@@ -464,7 +464,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .stack-title{
       text-align: center;
-      margin-top: 130px;
+      margin-top: 100px;
       line-height: 1.6;
   }
 
@@ -1000,7 +1000,7 @@ textarea{
 .stuck-nav-div-mobile{
   display: none;
   z-index: 5;
-  height: 80vh;
+  height: auto;
   width: 100%;
   position: relative;
   margin-top: 5px;
@@ -1019,6 +1019,7 @@ textarea{
   border-radius: 30px;
   background-color: #000014;
   box-shadow: 8px 8px 8px 0px silver;
+  padding-bottom: 50px;
 
  
 }
@@ -1309,9 +1310,6 @@ textarea{
      
      }
 
-    
-
-
 
      textarea{
       width: 90%;
@@ -1361,7 +1359,7 @@ textarea{
 .stuck-nav-div-mobile{
   display: none;
   z-index: 5;
-  height: 80vh;
+  height: auto;
   width: 100%;
   position: relative;
   margin-top: 5px;
@@ -1369,23 +1367,29 @@ textarea{
  
 }
 
+.stuck-nav-flex, .stuck-nav-flex span{
+  font-size: 25px;
+}
 
 
-
+.social-icon span{
+  font-size: 25px;
+}
 
 .stuck-nav-mobile{
   width: 70%;
   border: 1px solid silver;
-  height: 80%;
+  height: 100%;
   margin: 0 auto;
   border-radius: 30px;
   background-color: #000014;
   box-shadow: 8px 8px 8px 0px silver;
+  padding-bottom: 50px;
  
 }
 
 .all-right p{
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .stuck-nav-flex{
@@ -1397,6 +1401,7 @@ textarea{
 
 .btn-77{
   width: 30%;
+  font-size: 25px;
 }
 
 .image-box-1-mobile{

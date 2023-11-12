@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const ejs = require('ejs');
+const nodemailer = require('nodemailer');
+const port = process.env.PORT || 3000
 
 
 app.use(express.static("public"));
@@ -48,9 +50,30 @@ app.post('/contact', function(req, res) {
     const email = req.body.email;
     const message = req.body.message;
 
+    let transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'dummywithnero@gmail.com', // Your Gmail email address
+            pass: 'krox wmba ilzk ugmo' // Your Gmail password
+        }
+    });
 
-    res.render("thanks", {firstname:firstName});
+    let mailOptions = {
+        from: 'dummywithnero@gmail.com', // Sender address (should be your Gmail email address)
+        to: 'neromustlearn@gmail.com', // Recipient address
+        subject: 'New Form Submission',
+        text: `First name: ${firstName}\nEmail: ${email}\nMessage: ${message}`
+    };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+        }
+        console.log('Message sent: %s', info.messageId);
+        res.render("thanks", {firstname:firstName});
+    });
 });
+
 
 
 app.get("/thanks", (req, res) => {
@@ -60,7 +83,7 @@ app.get("/thanks", (req, res) => {
 })
 
 
-app.listen(3000, (function() {
+app.listen(port, (function() {
 
         console.log("We are now listening on port 3000 " )
 

@@ -70,6 +70,8 @@
   
   .stuck-nav-div-mobile {
   display: none;
+ 
+ 
   }
   
   .free-page {
@@ -186,14 +188,14 @@
   .intro-work-div {
   padding: 10px 20px;
   border-radius: 15px;
-  background-color: #279eff;
+  background-color: #fffdd0;
   font-size: 13px;
   color: #000014;
   }
   
   .intro-work-div:hover {
   color: #000014;
-  background-color: #fffdd0;
+  background-color: #279eff;
   transition-duration: 1s;
   }
   

@@ -9,8 +9,10 @@ const stuck = document.querySelector(".stuck-nav-div-mobile");
 menuButton.addEventListener("click", function(){
     if (stuck.style.display === "block") {
        stuck.style.display = "none";
+
     } else {
        stuck.style.display = "block";
+       
     }
  });
   

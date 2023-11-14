@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const ejs = require('ejs');
 const nodemailer = require('nodemailer');
+const _ = require('lodash');
 const port = process.env.PORT || 3000
 
 
@@ -46,7 +47,7 @@ app.get('/contact', function(req, res) {
 
 app.post('/contact', function(req, res) {
 
-    const firstName = req.body.firstname;
+    const firstName =  _.capitalize(_.lowerCase(req.body.firstname));
     const email = req.body.email;
     const message = req.body.message;
 

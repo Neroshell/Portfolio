@@ -3,11 +3,20 @@ const app = express();
 const ejs = require('ejs');
 const nodemailer = require('nodemailer');
 const _ = require('lodash');
+const https = require('https'); 
 const port = process.env.PORT || 3000
 
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended : true }));
+
+app.use((req, res, next) => {
+    if (req.headers['x-forwarded-proto'] !== 'https') {
+      res.redirect(`https://${req.hostname}${req.url}`);
+    } else {
+      next();
+    }
+  });
 
 app.set('view engine', "ejs");
 

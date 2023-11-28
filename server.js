@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const app = express();
 const ejs = require('ejs');
@@ -57,8 +58,8 @@ app.post('/contact', function(req, res) {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'dummywithnero@gmail.com', // Your Gmail email address
-            pass: 'krox wmba ilzk ugmo' // Your Gmail password
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS
         }
     });
 

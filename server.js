@@ -3,9 +3,10 @@ const app = express();
 const ejs = require('ejs');
 const nodemailer = require('nodemailer');
 const _ = require('lodash'); 
+const sslRedirect = require('heroku-ssl-redirect');
 const port = process.env.PORT || 3000
 
-
+app.use(sslRedirect());
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended : true }));
 

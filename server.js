@@ -51,20 +51,24 @@ app.get('/contact', function(req, res) {
 
 app.post('/contact', function(req, res) {
 
+
     const firstName =  _.capitalize(_.lowerCase(req.body.firstname));
     const email = req.body.email;
     const message = req.body.message;
+    const emailUser = process.env.EMAIL_USER;
+    const emailPass = process.env.EMAIL_PASS;
+
 
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'dummywithnero@gmail.com',
-            pass: 'krox wmba ilzk ugmo'
+            user: emailUser,
+            pass: emailPass
         }
     });
 
     let mailOptions = {
-        from: 'dummywithnero@gmail.com', // Sender address 
+        from: emailUser, // Sender address 
         to: 'neromustlearn@gmail.com', // Recipient address
         subject: 'New Form Submission',
         text: `First name: ${firstName}\nEmail: ${email}\nMessage: ${message}`

@@ -7,7 +7,6 @@ const enforce = require('express-sslify');
 const port = process.env.PORT || 3000
 
 app.use(enforce.HTTPS({trustProtoHeader: true}));
-app.use(sslRedirect());
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended : true }));
 

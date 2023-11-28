@@ -58,13 +58,13 @@ app.post('/contact', function(req, res) {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS
+            user: 'dummywithnero@gmail.com',
+            pass: 'krox wmba ilzk ugmo'
         }
     });
 
     let mailOptions = {
-        from: 'dummywithnero@gmail.com', // Sender address (should be your Gmail email address)
+        from: 'dummywithnero@gmail.com', // Sender address 
         to: 'neromustlearn@gmail.com', // Recipient address
         subject: 'New Form Submission',
         text: `First name: ${firstName}\nEmail: ${email}\nMessage: ${message}`

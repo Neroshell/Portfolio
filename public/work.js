@@ -25,3 +25,10 @@ menuButton.addEventListener("click", function(){
    }
 });
   
+
+const date = new Date();
+const currentYear = new Date(date.getFullYear());
+const fixedDate = currentYear - 2019;
+
+const year = document.querySelector('.year');
+ year.innerHTML = fixedDate +"+";

@@ -404,6 +404,15 @@
   .excelyn img {
   box-shadow: 0 0 10px 10px #279eff;
   }
+  .entelligence{
+    border: 5px solid #a44910;
+     box-shadow: 0 0 5px 5px #1C1C1C;
+  }
+
+  .entelligence img {
+    box-shadow: 0 0 10px 10px #F7EEE9;
+
+  }
   
   .show-room-1 h2 {
   background: linear-gradient(to right, white, #696969);

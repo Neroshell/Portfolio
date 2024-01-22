@@ -7,7 +7,7 @@ const _ = require('lodash');
 const enforce = require('express-sslify');
 const port = process.env.PORT || 3000
 
- app.use(enforce.HTTPS({trustProtoHeader: true}));
+app.use(enforce.HTTPS({trustProtoHeader: true}));
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended : true }));
 

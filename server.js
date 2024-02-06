@@ -5,15 +5,14 @@ const ejs = require('ejs');
 const nodemailer = require('nodemailer');
 const _ = require('lodash'); 
 const enforce = require('express-sslify');
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 7000
 
-app.use(enforce.HTTPS({trustProtoHeader: true}));
+//app.use(enforce.HTTPS({trustProtoHeader: true}));
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended : true }));
-
-
-
 app.set('view engine', "ejs");
+
+
 
 
 app.get('/', function(req, res) {

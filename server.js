@@ -93,6 +93,6 @@ app.get("/thanks", (req, res) => {
 
 app.listen(port, (function() {
 
-        console.log("We are now listening on port 3000 " )
+        console.log("We are now listening on port 7000 " )
 
 }));

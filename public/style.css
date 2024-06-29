@@ -414,7 +414,17 @@
 
   }
   
+  .rave{
+    border: 5px solid #31196B;
+    box-shadow: 0 0 5px 5px #EC53B0;
+  }
  
+  .rave img{
+
+    border: 5px solid #31196B;
+    box-shadow: 0 0 5px 5px #EC53B0;
+
+  }
   .show-room-1 h2 {
   background: linear-gradient(to right, white, #696969);
   -webkit-background-clip: text; /* For Safari and older browsers */

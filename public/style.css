@@ -413,6 +413,16 @@
     box-shadow: 0 0 10px 10px #F7EEE9;
 
   }
+
+  .rotary{
+    border: 5px solid rgb(247,168,27);
+     box-shadow: 0 0 5px 5px #17478F;
+  }
+
+  .rotary img {
+    box-shadow: 0 0 10px 10px white;
+
+  }
   
   .rave{
     border: 5px solid #31196B;

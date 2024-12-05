@@ -433,6 +433,16 @@
 
     border: 5px solid #31196B;
     box-shadow: 0 0 5px 5px #EC53B0;
+  }
+
+  .talaxio{
+    border: 5px solid blue;
+    box-shadow: 0 0 5px 5px #17478F;
+  }
+
+  .talaxio img{
+    border: 5px solid blue;
+    box-shadow: 0 0 5px 5px #17478F;
 
   }
   .show-room-1 h2 {

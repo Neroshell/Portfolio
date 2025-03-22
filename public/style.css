@@ -445,6 +445,17 @@
     box-shadow: 0 0 5px 5px #17478F;
 
   }
+
+  .casino{
+    border: 5px solid pink;
+    box-shadow: 0 0 5px 5px purple;
+  }
+
+  .casino img{
+    border: 5px solid blue;
+    box-shadow: 0 0 5px 5px #17478F;
+
+  }
   .show-room-1 h2 {
   background: linear-gradient(to right, white, #696969);
   -webkit-background-clip: text; /* For Safari and older browsers */
